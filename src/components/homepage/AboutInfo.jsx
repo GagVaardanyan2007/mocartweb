@@ -10,11 +10,19 @@ export default function AboutInfo( { data } ) {
         </div>
         <div className="w-full text-justify">{data.description}</div>
       </div>
-      <div>
-        <div>
-            
-        </div>
+      <div className='flex justify-between'>
+        {data.card.map((item, index) => (
+          <div key={index} className='flex items-center gap-5 mt-10'>
+            <i className='text-2xl'>{item.icon}</i>
+            <div>
+              <h2 className='text-2xl font-bold'>{item.title}</h2>
+                <p>{item.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
 }
+
+

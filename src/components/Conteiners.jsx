@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { aboutinfo } from '../../data/aboutinfo'
-import AboutInfo from './homePage/AboutInfo'
+import AboutInfo from './homepage/AboutInfo'
+
 
 export default function Conteiners() {
   return (
